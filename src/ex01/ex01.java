@@ -1,13 +1,11 @@
 package ex01;
 
+
+// 단축키  psvm -> main 함수 생성.
+// 클래스 실행 -> control + r;
 public class ex01 {
     public static void main(String[] args) {
-       for(int i=0; i<4; i++){
-           System.out.println(i);
-       }
-
-       for(int i=0; i<5; i++){
-           System.out.println("i = " + i);
-       }
+        int n = 3;
+        System.out.println("n = " + n);
     }
 }

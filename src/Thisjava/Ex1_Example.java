@@ -1,16 +1,15 @@
 package Thisjava;
 
-
+import java.util.Scanner;
 
 public class Ex1_Example {
     public static void main(String[] args) {
-       byte a=127;
-       byte b=-128;
-       byte c=1;
-       a=b=c;
-       System.out.println(a);
+        byte n=125;
+        for(int i=0;i<5;i++) {
+            System.out.println(n);
 
-
+            System.out.println(n);
+        }
 
     }
 

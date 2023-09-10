@@ -15,11 +15,7 @@ public class Ex1_Example {
             System.out.print("나이는"+age+",");
             System.out.print("체중은"+weight+",");
             System.out.println("독신여부는"+isSingle);
-            
-
-
-
-
+            sc.close();
 
         }
 

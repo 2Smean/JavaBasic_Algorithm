@@ -12,9 +12,9 @@ public class Ex1_DivideByZero {
 
         while (true) {
             try {
-                System.out.print("나뉨수를 입력>>");
+                System.out.print("나뉨수를 입력하세요");
                 dividend = sc.nextInt();
-                System.out.print("나눗수를 입력>>");
+                System.out.print("나눗수를 입력하세요");
                 divisor = sc.nextInt();
                 System.out.println("나누면" + dividend / divisor);
                 break;

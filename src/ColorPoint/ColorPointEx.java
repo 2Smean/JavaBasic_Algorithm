@@ -3,7 +3,7 @@ package ColorPoint;
 class Point{
     private int x, y;
 
-    public void set(int x, int y) {
+    public Point(int x, int y){
         this.x = x; this.y = y;
     }
 
@@ -15,7 +15,8 @@ class Point{
 class ColorPoint extends Point{
     private String color;
 
-    public void setColor(String color) {
+    public ColorPoint(int x, int y, String color){
+        super(x, y);
         this.color = color;
     }
 
@@ -29,13 +30,11 @@ class ColorPoint extends Point{
 public class ColorPointEx {
 
     public static void main(String[] args) {
-        Point p = new Point();
-        p.set(1,2);
+        Point p = new Point(1,2);
+//      p.set(1,2);// Point를 만들때 처음부터 1,2인 점을 만드는 것이 좋다
         p.showPoint();
 
-        ColorPoint cp = new ColorPoint();
-        cp.set(3,4);
-        cp.setColor("red");
+        ColorPoint cp = new ColorPoint(1,2, "red");
         cp.showPoint();//점만 찍는 것임
         cp.showColorPoint();
     }

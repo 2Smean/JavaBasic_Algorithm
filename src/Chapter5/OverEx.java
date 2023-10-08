@@ -10,6 +10,9 @@ class Line extends Shape {
     public void draw(){ //오버라이딩
         System.out.println("Line");
     }
+    public void show() {
+        System.out.print("~~~~~~~~");
+    }
 }
 
 class Circle extends Shape {
@@ -26,7 +29,13 @@ class Rect extends Shape {
 
 public class OverEx {
     public static void print(Shape p) { // p는 Shape 객체이거나 Shape을 상속받은 객체에 대한 레퍼런스
-        p.draw(); // 전달된 객체의 draw 메서드를 호출하여 그림을 그립니다.
+//        p.draw(); // 전달된 객체의 draw 메서드를 호출하여 그림을 그립니다.
+        if (p instanceof Line){
+//            System.out.println("Line 객체가 넘어왔다");
+            Line l = (Line)p; //다운캐스팅
+            l.show();
+        }
+        p.draw();
     }
     public static void main(String args[]) {
         Line line = new Line();

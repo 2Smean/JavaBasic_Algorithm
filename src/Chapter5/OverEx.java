@@ -1,6 +1,11 @@
 package Chapter5;
 
 class Shape{
+    Shape next;
+
+    public Shape(){
+        next = null;
+    }
     public void draw() {
         System.out.println("Shape");
     }
@@ -38,14 +43,22 @@ public class OverEx {
         p.draw();
     }
     public static void main(String args[]) {
-        Line line = new Line();
-        Shape shape = line; // 업캐스팅
+//        Line line = new Line();
+//        Shape shape = line; // 업캐스팅
+//
+//        line.draw();//Line 클래스의 draw() 호출
+//        shape.draw(); //Shape 클래스의 draw() 호출 -> 동적 바인딩에 의해 Line 클래스의 draw() 실행
+//
+//        print(shape); // Shape 객체 전달, Shape 클래스의 draw() 호출
+//        print(new Circle()); // Circle 객체 전달, Circle 클래스의 draw() 호출
+//        print(new Rect()); // Rect 객체 전달, Rect 클래스의 draw() 호출
+        Shape start, last, obj;
 
-        line.draw();//Line 클래스의 draw() 호출
-        shape.draw(); //Shape 클래스의 draw() 호출 -> 동적 바인딩에 의해 Line 클래스의 draw() 실행
+        start = new Line(); // 업캐스팅
+        last = start;
 
-        print(shape); // Shape 객체 전달, Shape 클래스의 draw() 호출
-        print(new Circle()); // Circle 객체 전달, Circle 클래스의 draw() 호출
-        print(new Rect()); // Rect 객체 전달, Rect 클래스의 draw() 호출
+        obj = new Rect();
+        last.next = obj;
+        last = obj;
     }
 }

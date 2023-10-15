@@ -1,4 +1,5 @@
 package Chapter5;
+import java.util.Properties;
 class Person {
     String name;
     String id;

@@ -7,12 +7,13 @@ class Shape{
         next = null;
     }
     public void draw() {
-        System.out.println("Shape");
+        System.out.println("*****Shape*****");
     }
 }
 
 class Line extends Shape {
     public void draw(){ //오버라이딩
+        super.draw();
         System.out.println("Line");
     }
     public void show() {
@@ -42,6 +43,13 @@ public class OverEx {
         }
         p.draw();
     }
+
+    public static void paint(Shape p) {
+        while (p != null) {
+            p.draw(); // 동적 바인딩
+            p = p.next;
+        }
+    }
     public static void main(String args[]) {
 //        Line line = new Line();
 //        Shape shape = line; // 업캐스팅
@@ -60,5 +68,11 @@ public class OverEx {
         obj = new Rect();
         last.next = obj;
         last = obj;
+
+        obj = new Circle();
+        last.next = obj;
+        last = obj;
+
+        paint(start);
     }
 }

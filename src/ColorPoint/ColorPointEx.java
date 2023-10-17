@@ -7,7 +7,7 @@ class Point{
         this.x = x; this.y = y;
     }
 
-    public void showPoint() {
+    public void show() {
         System.out.println("("+ x + "," + y + ")");
     }
 }
@@ -20,10 +20,11 @@ class ColorPoint extends Point{
         this.color = color;
     }
 
-    public void showColorPoint() {
+    public void show() { //오버라이딩
+        super.show();
         System.out.print(color);
 //      System.out.println(x);//private 이므로 오류발생
-        showPoint();
+
 
     }
 }
@@ -32,11 +33,10 @@ public class ColorPointEx {
     public static void main(String[] args) {
         Point p = new Point(1,2);
 //      p.set(1,2);// Point를 만들때 처음부터 1,2인 점을 만드는 것이 좋다
-        p.showPoint();
+        p.show();
 
-        ColorPoint cp = new ColorPoint(1,2, "red");
-        cp.showPoint();//점만 찍는 것임
-        cp.showColorPoint();
+        p = new ColorPoint(1,2, "red"); //업캐스팅
+        p.show();//점만 찍는 것임
     }
 
 }

@@ -1,19 +1,19 @@
 package Chapter5;
 
-class Shape{
+abstract class Shape{ //추상 클래스 불완전함
     Shape next;
 
     public Shape(){
         next = null;
     }
-    public void draw() {
-        System.out.println("*****Shape*****");
-    }
+    abstract public void draw(); //abstract : 추상메서드 추상적인 형태가 명확하지 않은
+//    public void draw() { //아무 코드가 없다고 해도 괜찮다 없어도 상관없다
+//        System.out.println("*****Shape*****");
+//    }
 }
 
-class Line extends Shape {
-    public void draw(){ //오버라이딩
-        super.draw();
+class Line extends Shape {//추상클래스를 상속받으면 추상클래스가 된다
+    public void draw(){ //추상 메소드를 반드시 오버라이딩 해야 한다.
         System.out.println("Line");
     }
     public void show() {
@@ -62,7 +62,7 @@ public class OverEx {
 //        print(new Rect()); // Rect 객체 전달, Rect 클래스의 draw() 호출
         Shape start, last, obj;
 
-        start = new Line(); // 업캐스팅
+        start = new Line(); // 업캐스팅//line이 추상 class 이므로 객체를 생성할 수 없다
         last = start;
 
         obj = new Rect();

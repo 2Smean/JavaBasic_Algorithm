@@ -22,7 +22,7 @@ public class UpCasting {
     public static void main(String[] args) {
         // TODO Auto-generated method stub
         Person p;
-        Student s = new Student("이승민123123123");
+        Student s = new Student("이승민123123123123");
         p = s;
 
         System.out.println(p.name);

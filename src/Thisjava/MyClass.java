@@ -14,7 +14,7 @@ class Circle2 {
     public Circle2(int r, String n) { // 원의 생성자
         radius = r;
         name = n;
-        System.out.println("생성자2");
+        System.out.println("생성자22");
     }
 
     public double getArea() { // 다른데에서 부를 함수를 만들게 된다 // 원의 면적 계산 메소드

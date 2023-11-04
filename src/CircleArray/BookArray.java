@@ -20,7 +20,7 @@ public class BookArray {
         for(int i=0; i<book.length; i++) {
             System.out.println("제목을 입력");
             String title = sc.nextLine();
-            System.out.println("작가를 입력");
+            System.out.println("작가를 입력하세요");
             String author = sc.nextLine();
             book[i] = new Book(title, author); // 배열 원소 객체 생성
         }

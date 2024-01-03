@@ -1,4 +1,4 @@
-package Thisjava;
+package HwangJava.Exception.Thisjava;
 
 public class Circle {
     public int radius; // 원의 반지름 필드

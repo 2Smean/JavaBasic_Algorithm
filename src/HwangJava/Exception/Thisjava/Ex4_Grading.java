@@ -1,5 +1,5 @@
 //score가 90점 이상, 80이상 90미만 , 70이상 80미만, 60이상 70미만 60미만 
-package Thisjava ;
+package HwangJava.Exception.Thisjava;
 import java.util.Scanner;
 public class Ex4_Grading {
     public static void main(String[] args) {

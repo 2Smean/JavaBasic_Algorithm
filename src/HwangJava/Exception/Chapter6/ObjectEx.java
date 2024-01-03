@@ -1,4 +1,4 @@
-package Chapter6;
+package HwangJava.Exception.Chapter6;
 
  class Point {
      private int x, y;

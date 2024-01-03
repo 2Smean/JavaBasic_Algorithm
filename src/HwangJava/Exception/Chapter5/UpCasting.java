@@ -1,5 +1,5 @@
-package Chapter5;
-import java.util.Properties;
+package HwangJava.Exception.Chapter5;
+
 class Person {
     String name;
     String id;

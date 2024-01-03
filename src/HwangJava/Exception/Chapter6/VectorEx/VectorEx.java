@@ -1,4 +1,4 @@
-package Chapter6.VectorEx;
+package HwangJava.Exception.Chapter6.VectorEx;
 
 import java.util.Vector;
 

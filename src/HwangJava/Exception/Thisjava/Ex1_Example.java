@@ -1,4 +1,4 @@
-package Thisjava;
+package HwangJava.Exception.Thisjava;
 import java.util.Scanner;
 public class Ex1_Example {
     public static void main(String args[]) {

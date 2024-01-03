@@ -1,4 +1,4 @@
-package Thisjava;
+package HwangJava.Exception.Thisjava;
 
 class Circle2 {
     private int radius; // Myclass 라는 메인에서 class 를 실행하는데

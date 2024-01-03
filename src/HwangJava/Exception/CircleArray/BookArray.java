@@ -1,6 +1,6 @@
 //Book 클래스를 활용하여 2개짜리 Book 객체 배열을 만들고,
 //사용자로 부터 책의 제목 title과 저자 author를 입력 받아 배열을 완성하라
-package CircleArray;
+package HwangJava.Exception.CircleArray;
 
 import java.util.Scanner;
 

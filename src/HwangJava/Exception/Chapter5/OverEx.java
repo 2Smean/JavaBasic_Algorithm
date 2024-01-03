@@ -1,4 +1,4 @@
-package Chapter5;
+package HwangJava.Exception.Chapter5;
 
 abstract class Shape{ //추상 클래스 불완전함
     Shape next;

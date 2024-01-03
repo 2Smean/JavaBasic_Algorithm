@@ -1,4 +1,4 @@
-package Thisjava;
+package HwangJava.Exception.Thisjava;
 
 class Calc {
     public static int abs(int a) {return a>0?a:-a;}

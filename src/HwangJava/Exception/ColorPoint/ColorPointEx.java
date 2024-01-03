@@ -1,4 +1,4 @@
-package ColorPoint;
+package HwangJava.Exception.ColorPoint;
 
 class Point{
     private int x, y;

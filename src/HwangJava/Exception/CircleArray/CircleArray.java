@@ -1,4 +1,4 @@
-package CircleArray;
+package HwangJava.Exception.CircleArray;
 
 import java.util.Scanner;
 

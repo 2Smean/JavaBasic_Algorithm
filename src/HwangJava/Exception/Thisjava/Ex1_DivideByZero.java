@@ -1,4 +1,4 @@
-package HwangJava.Exception;
+package HwangJava.Exception.Thisjava;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

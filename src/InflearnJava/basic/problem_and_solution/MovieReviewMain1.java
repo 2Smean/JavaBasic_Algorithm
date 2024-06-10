@@ -1,4 +1,4 @@
-package InflearnJava.basic.class1.problem_and_solution;
+package InflearnJava.basic.problem_and_solution;
 
 public class MovieReviewMain1 {
     public static void main(String[] args) {
